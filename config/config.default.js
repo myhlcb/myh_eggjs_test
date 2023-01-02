@@ -22,6 +22,7 @@ module.exports = appInfo => {
   const userConfig = {
     // myAppName: 'egg',
   };
+  // 给中间件传入options
   config.view = {
     mapping: {
       '.html': 'ejs',

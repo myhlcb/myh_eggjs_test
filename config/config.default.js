@@ -16,8 +16,8 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1672656641300_8505';
 
   // add your middleware config here
-  config.middleware = [];
-
+  config.middleware = [ 'addTime' ];
+  config.addTime = { threshold: 1024 };
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',

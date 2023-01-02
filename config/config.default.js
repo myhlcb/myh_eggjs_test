@@ -27,6 +27,7 @@ module.exports = appInfo => {
       '.html': 'ejs',
     },
   };
+  config.newsApi = 'https://i.news.qq.com';
 
   return {
     ...config,

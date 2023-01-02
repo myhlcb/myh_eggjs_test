@@ -7,7 +7,7 @@ class NewsController extends Controller {
     this.ctx.body = '新闻页面';
   }
   async list() {
-    this.ctx.body = [];
+    this.ctx.body = await this.service.news.getNewsList();
   }
 }
 
